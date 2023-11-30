@@ -1,0 +1,28 @@
+<table id="sales_events">
+  <thead>
+  <tr>
+    <th>Store</th>
+    <th>Model</th>
+    <th>Inventory</th>
+    <th>Action</th>
+  </tr>
+  </thead>
+  <tbody>
+  <% sales_events.each do |sales_event| %>
+    <tr>
+      <td>
+        <%= link_to sales_event.store, store_path(sales_event.store) %>
+      </td>
+      <td>
+        <%= sales_event.model %>
+      </td>
+      <td>
+        <%= sales_event.inventory %>
+      </td>
+      <td>
+        <%= link_to "Show", sales_event %>
+      </td>
+    </tr>
+  <% end %>
+  </tbody>
+</table>
