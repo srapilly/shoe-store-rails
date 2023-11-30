@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <title><%= yield(:title)  %> - Shoe Store</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -7,10 +7,11 @@
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
+    <%= yield(:meta)  %>
     <%= stylesheet_link_tag "application" %>
   </head>
 
-  <body lang="en">
+  <body >
     <%= yield %>
   </body>
 </html>

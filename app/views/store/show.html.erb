@@ -1,5 +1,9 @@
 <% content_for :title, @store %>
 
+<% content_for :meta do %>
+  <meta http-equiv="Refresh" content="5">
+<% end %>
+
 <h1><%= @store %></h1>
 
 <p>Last inventory known for each product</p>
