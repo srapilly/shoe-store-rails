@@ -1,0 +1,7 @@
+<% content_for :title, @store %>
+
+<h1><%= @store %></h1>
+
+<p>Last inventory known for each product</p>
+
+<%= render 'sales_events/event_table', sales_events: @sales_events %>
