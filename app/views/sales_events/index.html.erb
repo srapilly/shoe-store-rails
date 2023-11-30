@@ -2,13 +2,33 @@
 
 <h1>Sales events</h1>
 
-<div id="sales_events">
+<table id="sales_events">
+  <thead>
+  <tr>
+    <th>Store</th>
+    <th>Model</th>
+    <th>Inventory</th>
+    <th>Action</th>
+  </tr>
+  </thead>
+  <tbody>
   <% @sales_events.each do |sales_event| %>
-    <%= render sales_event %>
-    <p>
-      <%= link_to "Show this sales event", sales_event %>
-    </p>
+    <tr>
+      <td>
+        <%= sales_event.store %>
+      </td>
+      <td>
+        <%= sales_event.model %>
+      </td>
+      <td>
+        <%= sales_event.inventory %>
+      </td>
+      <td>
+        <%= link_to "Show", sales_event %>
+      </td>
+    </tr>
   <% end %>
-</div>
+  </tbody>
+</table>
 
 <%= link_to "New sales event", new_sales_event_path %>
