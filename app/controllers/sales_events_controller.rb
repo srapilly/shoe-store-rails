@@ -5,6 +5,7 @@ class SalesEventsController < ApplicationController
 
   # GET /sales_events
   def index
+    @count_promise = SalesEvent.async_count
     @sales_events = SalesEvent
                     .order(updated_at: :desc)
                     .page params[:page]

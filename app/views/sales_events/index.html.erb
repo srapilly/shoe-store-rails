@@ -4,6 +4,8 @@
 
 <h1>Sales events</h1>
 
+<p>Number of events: <%= @count_promise.value %></p>
+
 <%= render 'event_table', sales_events: @sales_events %>
 
 <%= link_to "New sales event", new_sales_event_path %>
