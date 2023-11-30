@@ -1,24 +1,18 @@
-# README
+# Setup
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+```
+bundle install
+rails server
+```
+Go to http://localhost:3000 
 
-* Ruby version
 
-* System dependencies
+To listen to websocket events 
+```
+rake websocket:read_events
+```
+Host can be changed in [websocket.yml](config/websocket.yml)
 
-* Configuration
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
