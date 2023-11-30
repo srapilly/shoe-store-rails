@@ -12,9 +12,9 @@
 
 ActiveRecord::Schema[7.1].define(version: 2023_11_30_031610) do
   create_table "sales_events", force: :cascade do |t|
-    t.string "store"
-    t.string "model"
-    t.integer "inventory"
+    t.string "store", null: false
+    t.string "model", null: false
+    t.integer "inventory", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
