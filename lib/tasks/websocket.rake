@@ -2,7 +2,7 @@
 
 namespace :websocket do
   def websocket_client
-    ws = Faye::WebSocket::Client.new('ws://localhost:8080/')
+    ws = Faye::WebSocket::Client.new(Rails.configuration.websocket['host'])
     ws.on :open do
       p :open
     end
