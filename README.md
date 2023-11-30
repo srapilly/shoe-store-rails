@@ -36,3 +36,4 @@ Some ideas:
 - Pre commit hook for RuboCop / formatter
 - Update the data in realtime in the frontend 
 - Static code analysis tools such as Brakeman to find security issues
+- Security Headers, Cache Control Headers, ...
