@@ -4,6 +4,9 @@ Style/Documentation:
 Rails/I18nLocaleTexts:
   Enabled: false
 
+Metrics/MethodLength:
+  Max: 20
+
 require: rubocop-rails
 
 AllCops:
