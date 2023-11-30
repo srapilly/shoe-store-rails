@@ -1,7 +1,13 @@
 Style/Documentation:
   Enabled: false
 
+Rails/I18nLocaleTexts:
+  Enabled: false
+
+require: rubocop-rails
 
 AllCops:
+  NewCops: enable
   Exclude:
     - 'bin/*'
+    - 'vendor/**/*'
