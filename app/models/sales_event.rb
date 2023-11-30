@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 class SalesEvent < ApplicationRecord
+  paginates_per 20
+
   validates :store, presence: true
   validates :model, presence: true
   validates :inventory, presence: true

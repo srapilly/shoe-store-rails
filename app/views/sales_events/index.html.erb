@@ -7,3 +7,5 @@
 <%= render 'event_table', sales_events: @sales_events %>
 
 <%= link_to "New sales event", new_sales_event_path %>
+
+<%= paginate @sales_events %>

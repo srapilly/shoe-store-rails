@@ -14,9 +14,12 @@ rake websocket:read_events
 ```
 The host can be changed in [websocket.yml](config/websocket.yml)
 
-
 ## Thoughts
 
+- websocket usage
+- testing
+- 
+=======
 ### Websocket 
 
 Websocket usage does not seems ideal for this use case from server to server

@@ -5,7 +5,9 @@ class SalesEventsController < ApplicationController
 
   # GET /sales_events
   def index
-    @sales_events = SalesEvent.all
+    @sales_events = SalesEvent
+                    .order(updated_at: :desc)
+                    .page params[:page]
   end
 
   # GET /sales_events/1
