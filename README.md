@@ -16,3 +16,8 @@ Host can be changed in [websocket.yml](config/websocket.yml)
 
 
 
+## Thoughts
+
+- websocket usage
+- testing
+- 
