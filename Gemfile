@@ -7,12 +7,12 @@ ruby '3.2.2'
 gem 'bootsnap', require: false
 gem 'eventmachine'
 gem 'faye-websocket'
+gem 'kaminari'
 gem 'puma', '>= 5.0'
 gem 'rails', '~> 7.1.2'
 gem 'sprockets-rails'
 gem 'sqlite3', '~> 1.4'
 gem 'tzinfo-data', platforms: %i[windows jruby]
-gem 'kaminari'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
